@@ -1,0 +1,38 @@
+.locations-container {
+    padding: 10px 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    place-items: center;
+}
+
+.location-card {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 8px 25px;
+    padding: 15px;
+    background-color: #282A3A;
+    width: clamp(400px, 70%, 595px);
+    height: 170px;
+    border-radius: 10px;
+}
+
+.location-card-info {
+    display: flex;
+}
+
+.location-img {
+    border-radius: 20% 1%;
+    height: 130px;
+    width: 200px;
+}
+
+.location-card-contact{
+    margin: 0 15px;
+}
+
+.location-parqueo {
+    align-self: center;
+    font-weight: 600;
+}

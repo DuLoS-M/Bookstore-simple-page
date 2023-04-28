@@ -93,7 +93,7 @@ a:hover {
     border-radius: 5px;
 }
 .header-searchbar:focus {
-    outline: green solid 3px;
+    outline: #C69749 solid 3px;
     transition: outline 0.025s;
 }
 .cart {
