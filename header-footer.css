@@ -8,6 +8,9 @@ body {
     color: white;
     /* background-color: rgb(238, 238, 238); */
     background-color: #C69749;
+    background-image: linear-gradient(to bottom, #d19638, #e6dbbd);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
@@ -15,6 +18,8 @@ body {
     display: flex;
     align-items: center;
     background-color: black;
+    background-image: linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 0 6rem;
     height: 8rem;
 }
@@ -22,6 +27,7 @@ body {
 .header-logo {
     font-weight: 700;
     margin: 0 1rem;
+    font-size: 2rem;
 }
 
 .header-info {
@@ -40,6 +46,7 @@ body {
 a {
     text-decoration: none;
     color:#735F32;
+    transition: color 0.2s;
 }
 
 .locations-link {
@@ -49,10 +56,12 @@ a {
 
 a:visited {
     color: #735F32;
+    transition: color 0.2s;
 }
 
 a:hover {
     color:#daa858;
+    transition: color 0.2s;
 }
 
 .account > li > a:hover {
@@ -67,15 +76,22 @@ a:hover {
     height: 1.5rem;
     width: 1.5rem;
     background-color: #C69749;
-    border-radius: 25px;
+    border-radius: 50px;
     margin: 0 0.25rem;
     color: black;
+    transition: border-radius 1s;
+    
 }
 
 .media-links > a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.media-links:hover {
+    background-color: #dfbe8b;
+    border-radius: 5px;
+    transition: all 0.2s;
 }
 
 .header-searchbar {
@@ -91,10 +107,12 @@ a:hover {
     border-width: 1px;
     border-color: black;
     border-radius: 5px;
+    outline: #C69749 solid 0px;
+    transition: outline 0.555s ease-out;
 }
 .header-searchbar:focus {
     outline: #C69749 solid 3px;
-    transition: outline 0.025s;
+    transition: outline 0.055s ease;
 }
 .cart {
     display: flex;
@@ -102,10 +120,15 @@ a:hover {
     align-items: center;
     height: 3rem;
     width: 3rem;
-    background-color: #585244;
+    background-color: #aaa598;
     border-radius: 15px;
     margin: 0 2rem;
 }
+
+.cart > a > img {
+    width: 30px;
+}
+
 .user{
     display: flex;
     flex-direction: column;
@@ -134,24 +157,44 @@ ul {
 }
 
 .nav-links {
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-left: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 5px 20px;
+  transition: all 0.3s ease;
+  font-weight: 700;
 }
 
 .nav-links > li {
     margin: 0 1rem;
 }
 
+.nav-links > li > a{
+    color: #d39737;
+    transition: color 0.2s;
+}
 
+.nav-links > li > a:visited {
+    color: #d39737;
+    transition: color 0.2s;
+}
+
+.nav-links > li > a:hover {
+    color:#e9c279;
+    transition: color 0.2s;
+}
 
 .navbar {
     background-color: #282A3A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
 }
 
 .footer {
     margin-top: auto;
     background-color: black;
+    background-image: linear-gradient(to bottom right, rgba(255,255,255,0.1), rgba(255, 255, 255, 0));
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -159,6 +202,8 @@ ul {
 }
 
 .footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -13,6 +13,9 @@
     margin: 8px 25px;
     padding: 15px;
     background-color: #282A3A;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
     width: clamp(400px, 70%, 595px);
     height: 170px;
     border-radius: 10px;

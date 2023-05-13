@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.name-container {
+    display: flex;
+    border: red;
+    justify-content: space-between;
+    
+}
+
+.name-container > div {
+    width: 45%;
+}
+
+#first-name {
+    width: 100%;
+}
+
+#last-name {
+    width: 100%;
+}
+
+#first-name, #last-name, #email, #message {
+    font-family: 'Inter', sans-serif;
+    outline: #C69749 solid 0px;
+    background-color: lightgray;
+    transition: all 0.555s;
+}
+
+#first-name:focus, #last-name:focus, #email:focus, #message:focus {
+    background-color: aliceblue;
+    outline: #C69749 solid 3px;
+    transition: all 0.055s;
+}
+
+
+button {
+    align-self: center;
+    width: 40%;
+    height: 2rem;
+    border-style: none;
+    border-radius: 15px;
+    background-color:  #83632f;
+    transition: background-color 0.55s;
+}
+
+button:hover{
+    background-color:  #C69749;
+    transition: background-color 0.15s;
+}
+
+
+
+.contact-form-container {
+    width: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 5px;
+    border-color: red;
+    /* background-color: hsl(234, 19%, 30%, 80%); */
+    background-color: #282A3A;
+    padding: 1rem;
+    border-radius: 15px;
+    gap: 0.5rem
+}
+
+#message {
+    resize: none;
+}
+
+input, textarea {
+    border-style: none;
+    border-radius: 7px;
+}
