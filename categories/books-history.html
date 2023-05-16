@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/header-footer.css">
-    <link rel="stylesheet" href="./styles/categories.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/books.css">
+    <script src="book-generation.js" defer></script>
+    <script src="../header.js" defer></script>
     <title>BookShelf</title>
 </head>
 <body>
@@ -16,13 +18,13 @@
         <div class="header-logo">LOGO</div>
         <div class="header-info">
             <div class="info">
-                <div class="media-links"><a href="Index.html"><img src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-1464523-1239437.png" alt="facebook" width="18px"></div></a>
-                <div class="media-links"><a href="Index.html"><img src="https://cdn.iconscout.com/icon/free/png-512/free-twitter-1464537-1239448.png" alt="twitter" width="18px"></div></a>
-                <div class="media-links"><a href="Index.html"><img src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-1464529-1239440.png" alt="linkedin" width="18px"></div></a>
-                <div class="media-links"><a href="Index.html"><img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-1464538-1239449.png" alt="instagram" width="18px"></div></a>
+                <div class="media-links"><a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/free-facebook-1464523-1239437.png" alt="facebook" width="18px"></div></a>
+                <div class="media-links"><a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/free-twitter-1464537-1239448.png" alt="twitter" width="18px"></div></a>
+                <div class="media-links"><a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-1464529-1239440.png" alt="linkedin" width="18px"></div></a>
+                <div class="media-links"><a href=""><img src="https://cdn.iconscout.com/icon/free/png-512/free-instagram-1464538-1239449.png" alt="instagram" width="18px"></div></a>
                 <div> | </div>
                 <div class="media-links"><img src="https://cdn.iconscout.com/icon/free/png-512/free-maps-3273935-2741675.png?f=avif&w=256" alt="ubicacion" width="18px"></div>
-                <div class="locations-link"><a href="locations.html">Donde encontrar tiendas</a></div>
+                <div class="locations-link"><a href="../locations.html">Donde encontrar tiendas</a></div>
                 
             </div>
             <input type="text" class="header-searchbar" placeholder="Buscar libros...">
@@ -38,47 +40,21 @@
     </header>
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="locations.html">UBICACIONES</a></li>
-            <li><a href="index.html">PAGINA PRINCIPAL</a></li>
-            <li><a href="contact.html">CONTACTO</a></li>
+            <li><a href="../locations.html">UBICACIONES</a></li>
+            <li><a href="../index.html">PAGINA PRINCIPAL</a></li>
+            <li><a href="../contact.html">CONTACTO</a></li>
         </ul>
     </nav>
 
     <main>
-        <div class="genre-container">
-            <a class="card-link" href="./categories/books-romance.html">
-                <div class="card" style="background-image: url(https://picsum.photos/400);">
-                  <h2>Romance</h2>
-                </div>
-              </a>
-            <a class="card-link" href="./categories/books-mistery.html">
-                <div class="card" style="background-image: url(https://picsum.photos/401);">
-                  <h2>Misterio</h2>
-                </div>
-              </a>
-            <a class="card-link" href="./categories/books-scifi.html">
-                <div class="card" style="background-image: url(https://picsum.photos/402);">
-                  <h2>Ciencia ficción </h2>
-                </div>
-              </a>
-            <a class="card-link" href="./categories/books-fantasy.html">
-                <div class="card" style="background-image: url(https://picsum.photos/403);">
-                  <h2>Fantasia</h2>
-                </div>
-              </a>
-            <a class="card-link" href="./categories/books-history.html">
-                <div class="card" style="background-image: url(https://picsum.photos/404);">
-                  <h2>Historia</h2>
-                </div>
-              </a>
-            <a class="card-link" href="./categories/books-narrative.html">
-                <div class="card" style="background-image: url(https://picsum.photos/405);">
-                  <h2>Narrativa</h2>
-                </div>
-              </a>
-
+        <div class="book-container">
+              <!-- <div class="card">
+                <img src="https://picsum.photos/200" alt="Book Cover">
+                <h2>Book Title</h2>
+                <p>Author Name</p>
+                <a href="#">Read More</a> -->
         </div>
-          
+              
           
     </main>
 

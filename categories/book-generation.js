@@ -1,32 +1,5 @@
 const cardContainer = document.querySelector('.book-container');
-
-const books = [
-  {
-    title: 'Book Title 1',
-    author: 'Author Name 1',
-    coverImage: 'https://picsum.photos/200',
-    link: '#'
-  },
-  {
-    title: 'Book Title 2',
-    author: 'Author Name 2',
-    coverImage: 'https://picsum.photos/200',
-    link: '#'
-  },
-  {
-    title: 'Book Title 3',
-    author: 'Author Name 3',
-    coverImage: 'https://picsum.photos/200',
-    link: '#'
-  },
-  {
-    title: 'Book Title 4',
-    author: 'Author Name 4',
-    coverImage: 'https://picsum.photos/200',
-    link: '#'
-  },
-
-];
+const books = [];
 
 function createBookCard(book) {
   const card = document.createElement('div');
@@ -55,12 +28,32 @@ function createBookCard(book) {
 
 function addBooksToPage(numBooks) {
   for (let i = 0; i < numBooks; i++) {
-    const bookIndex = i % books.length;
-    const book = books[bookIndex];
+    // const bookIndex = i % books.length;
+    // const book = books[bookIndex];
+    const book = books[i];
     const card = createBookCard(book);
     cardContainer.appendChild(card);
   }
 }
 
-numberOfBooks = Math.floor(Math.random() * 10) + 5;
+numberOfBooks = Math.floor(Math.random() * 10) + 10;
+
+function BookFactory(title, author, coverImageNum, link) {
+  this.title = title
+  this.author = author
+  this.coverImage = `https://picsum.photos/45${coverImageNum}`
+  this.link = "#"
+}
+
+for (let i = 0; i< numberOfBooks; i++) {
+  books.push(new BookFactory(
+    `Titulo ${i}`,
+    `Autor ${i}`,
+    i,  
+  ))
+
+}
+
 addBooksToPage(numberOfBooks);
+
+

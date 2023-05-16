@@ -1,9 +1,9 @@
 
 .book-container{
-    margin-left: 2.5rem;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-left: 2.5rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
@@ -25,10 +25,11 @@
   .card h2 {
     font-size: 1.5rem;
     margin: 10px 0;
+    color: #282A3A;
   }
   
   .card p {
-    color: #888888;
+    color: #636363;
     font-size: 1.2rem;
     margin: 0;
   }

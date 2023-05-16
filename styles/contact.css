@@ -3,6 +3,12 @@ main {
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+    color: #f1dbb6;
+}
+
+.form-title {
+    font-weight: 700;
+    color: #d39737;
 }
 
 .name-container {
@@ -15,6 +21,7 @@ main {
 .name-container > div {
     width: 45%;
 }
+
 
 #first-name {
     width: 100%;
@@ -40,6 +47,8 @@ main {
 
 button {
     align-self: center;
+    font-size: 15px;
+    font-weight: 700;
     width: 40%;
     height: 2rem;
     border-style: none;
