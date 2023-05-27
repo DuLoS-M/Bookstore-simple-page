@@ -68,6 +68,8 @@
   }
 
 .book-of-the-year-image{
+    max-height: 100%;
+    max-width: 100%;
     animation: book-of-the-year-border 2s infinite;
 }
 
